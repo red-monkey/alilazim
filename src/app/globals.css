@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.looping-text-left {
+  display: flex;
+  animation: moveLeft linear infinite 50s;
+  align-items: center;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.looping-text-right {
+  display: flex;
+  animation: moveRight linear infinite 50s;
+  align-items: center;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.notVisible {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
