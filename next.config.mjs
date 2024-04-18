@@ -10,6 +10,24 @@ const nextConfig = {
       },
     ],
   },
+  webpack: (config, { isServer }) => {
+    // For PDF files
+    config.module.rules.push({
+      test: /\.pdf$/,
+      use: [
+        {
+          loader: "file-loader",
+          options: {
+            publicPath: "/_next",
+            name: "static/media/[name].[hash].[ext]",
+          },
+        },
+      ],
+    });
+
+    // Important: return the modified config
+    return config;
+  },
 };
 
 export default nextConfig;

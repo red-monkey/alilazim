@@ -5,3 +5,4 @@ export * from "./getintouch";
 export * from "./homepagecomponents";
 export * from "./questionsanswers";
 export * from "./venturesitems";
+export * from "./homepagebooks";

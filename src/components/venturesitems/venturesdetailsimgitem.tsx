@@ -20,8 +20,10 @@ export const VenturesDetailsImgItem: React.FC<Props> = (props: Props) => {
     >
       <Image
         className="object-fill w-full h-full"
-        src={require(`../../common/images/${props.imgURL}`)}
+        src={props.imgURL}
         alt=""
+        width={1000}
+        height={1000}
       />
     </div>
   );

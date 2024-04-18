@@ -6,6 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
 import { FaMedium } from "react-icons/fa";
 import { navbarData, socilaMedia } from "@/common/data/datas";
+import Image from "next/image";
 type Props = {};
 
 export const Navbar: React.FC = (props: Props) => {
@@ -69,23 +70,91 @@ export const Navbar: React.FC = (props: Props) => {
             {navbarData.title}
           </Link>
 
-          <div className="flex ">
-            <div className=" mr-4 hidden sm:flex">
+          <div className="flex">
+            <div className="mr-4 hidden  sm:grid grid-row-1 grid-flow-col gap-2">
+              <a
+                target="_blank"
+                href={socilaMedia.universityOfCalifornia}
+                rel="noopener noreferrer"
+                className="flex items-center justify-center"
+              >
+                <Image
+                  src={"/ucr_black.png"}
+                  alt="ucr_black"
+                  className="h-[2.2rem] w-[2.2rem] rounded-md object-contain"
+                  width={40}
+                  height={40}
+                />
+              </a>
+              <a
+                target="_blank"
+                href={socilaMedia.universityOfAppliedSciences}
+                rel="noopener noreferrer"
+                className="flex items-center justify-center"
+              >
+                <Image
+                  src={"/sakarya_black.png"}
+                  alt="ucr_black"
+                  className="h-[2.2rem] w-[2.2rem] rounded-md object-contain"
+                  width={40}
+                  height={40}
+                />
+              </a>
+              <a
+                target="_blank"
+                href={socilaMedia.googleScholar}
+                rel="noopener noreferrer"
+                className="flex items-center justify-center"
+              >
+                <Image
+                  src={"/google_black.png"}
+                  alt="ucr_black"
+                  className="h-[2.2rem] w-[2.2rem] rounded-md object-contain"
+                  width={40}
+                  height={40}
+                />
+              </a>
+              <a
+                target="_blank"
+                href={socilaMedia.academia}
+                rel="noopener noreferrer"
+                className="flex items-center justify-center"
+              >
+                <Image
+                  src={"/acamedia_black.png"}
+                  alt="ucr_black"
+                  className="h-[2.2rem] w-[2.2rem] rounded-md object-contain"
+                  width={40}
+                  height={40}
+                />
+              </a>
               <a
                 target="_blank"
                 href={socilaMedia.github}
                 rel="noopener noreferrer"
               >
-                <FaGithubSquare size={"100%"} className="h-10 mr-4" />
+                <FaGithubSquare size={"100%"} className="h-10" />
               </a>
-              <a target="_blank" href={socilaMedia.linkedin}>
-                <FaLinkedin size={"100%"} className="h-10 mr-4" />
+              <a
+                target="_blank"
+                href={socilaMedia.linkedin}
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin size={"100%"} className="h-10" />
               </a>
-              <a target="_blank" href={socilaMedia.medium}>
-                <FaMedium size={"100%"} className="h-10 mr-4" />
+              <a
+                target="_blank"
+                href={socilaMedia.medium}
+                rel="noopener noreferrer"
+              >
+                <FaMedium size={"100%"} className="h-10" />
               </a>
-              <a target="_blank" href={socilaMedia.twitter}>
-                <FaTwitterSquare size={"100%"} className="h-10 mr-4" />
+              <a
+                target="_blank"
+                href={socilaMedia.twitter}
+                rel="noopener noreferrer"
+              >
+                <FaTwitterSquare size={"100%"} className="h-10" />
               </a>
             </div>
             <Link
@@ -202,7 +271,97 @@ export const Navbar: React.FC = (props: Props) => {
                 />
                 CONTACT
               </Link>
-              <div className="flex w-full items-center justify-center sm:hidden border-t border-white p-2">
+              <div className="grid sm:hidden grid-row-2 grid-cols-4 gap-2 border-t border-white p-2">
+                <a
+                  target="_blank"
+                  href={socilaMedia.universityOfCalifornia}
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center"
+                >
+                  <Image
+                    src={"/ucr_white.png"}
+                    alt="ucr_black"
+                    className="h-[2.2rem] w-[2.2rem] rounded-md object-contain"
+                    width={40}
+                    height={40}
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  href={socilaMedia.universityOfAppliedSciences}
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center"
+                >
+                  <Image
+                    src={"/sakarya_white.png"}
+                    alt="ucr_black"
+                    className="h-[2.2rem] w-[2.2rem] rounded-md object-contain"
+                    width={40}
+                    height={40}
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  href={socilaMedia.googleScholar}
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center"
+                >
+                  <Image
+                    src={"/google_white.png"}
+                    alt="ucr_black"
+                    className="h-[2.2rem] w-[2.2rem] rounded-md object-contain"
+                    width={40}
+                    height={40}
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  href={socilaMedia.academia}
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center"
+                >
+                  <Image
+                    src={"/academia_white.png"}
+                    alt="ucr_black"
+                    className="h-[2.2rem] w-[2.2rem] rounded-md object-contain"
+                    width={40}
+                    height={40}
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  href={socilaMedia.github}
+                  rel="noopener noreferrer"
+                >
+                  <FaGithubSquare size={"100%"} className="h-10" fill="white" />
+                </a>
+                <a
+                  target="_blank"
+                  href={socilaMedia.linkedin}
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin size={"100%"} className="h-10" fill="white" />
+                </a>
+                <a
+                  target="_blank"
+                  href={socilaMedia.medium}
+                  rel="noopener noreferrer"
+                >
+                  <FaMedium size={"100%"} className="h-10" fill="white" />
+                </a>
+                <a
+                  target="_blank"
+                  href={socilaMedia.twitter}
+                  rel="noopener noreferrer"
+                >
+                  <FaTwitterSquare
+                    size={"100%"}
+                    className="h-10"
+                    fill="white"
+                  />
+                </a>
+              </div>
+              {/*  <div className="flex w-full items-center justify-center sm:hidden border-t border-white p-2">
                 <a
                   target="_blank"
                   href={socilaMedia.github}
@@ -231,7 +390,7 @@ export const Navbar: React.FC = (props: Props) => {
                     fill="white"
                   />
                 </a>
-              </div>
+              </div> */}
             </div>
           </nav>
         </div>

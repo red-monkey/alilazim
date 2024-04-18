@@ -1,14 +1,8 @@
-type homepagedata = {
-  title: string;
-  description: string;
-  imageURL: string;
-};
-
-export const homePageData: homepagedata = {
+export const homePageData = {
   title: "A Visionary Tech Leader & Serial Entrepreneur",
   description:
     "Welcome to the digital home of Ali Lazim, a transformational advisor, technology leader, and serial entrepreneur with a passion for driving innovation and positive change. With a diverse background spanning artificial intelligence, biotechnology, cybersecurity, and software engineering, Ali Lazim has established himself as a prominent figure in the tech industry, renowned for his visionary approach and relentless pursuit of excellence.",
-  imageURL: require("../../common/images/ali-photo01.png"),
+  imageURL: "/ali-photo01.png",
 };
 
 export const flowingTextData = {
@@ -46,7 +40,7 @@ export const venturesDatas = [
         description: "https://laural.xyz",
       },
     ],
-    coverImage: "big-laural.png",
+    coverImage: "/big-laural.png",
     images: [""],
   },
   {
@@ -63,7 +57,7 @@ export const venturesDatas = [
         description: "https://medixbot.com",
       },
     ],
-    coverImage: "big-medixbot.png",
+    coverImage: "/big-medixbot.png",
     images: [""],
   },
   {
@@ -80,7 +74,7 @@ export const venturesDatas = [
         description: "https://creacubed.com",
       },
     ],
-    coverImage: "big-creacubed.png",
+    coverImage: "/big-creacubed.png",
     images: [""],
   },
   {
@@ -97,7 +91,7 @@ export const venturesDatas = [
         description: "https://cubed.work",
       },
     ],
-    coverImage: "big-wrok3.png",
+    coverImage: "/big-wrok3.png",
     images: [""],
   },
   {
@@ -114,7 +108,7 @@ export const venturesDatas = [
         description: "https://saaspass.com",
       },
     ],
-    coverImage: "saaspass.png",
+    coverImage: "/saaspass.png",
     images: [""],
   },
 ];
@@ -124,25 +118,25 @@ export const whatCanIdoData = [
     id: 0,
     title: "Seasoned entrepreneur and technology leader",
     text: "Ali brings a wealth of expertise to the table, including innovation, technology leadership, entrepreneurship, product development, management, and more.",
-    img: require("../../common/images/Expertise-01.png"),
+    img: "/Expertise-01.png",
   },
   {
     id: 1,
     title: "Interdisciplinary approach",
     text: "His interdisciplinary approach, coupled with a deep understanding of emerging technologies, enables him to tackle complex challenges and drive meaningful advancements in the industry.",
-    img: require("../../common/images/Expertise-02.png"),
+    img: "/Expertise-02.png",
   },
   {
     id: 2,
     title: "Foundational AI and software product creator",
     text: "Whether it's developing cutting-edge AI solutions and software/mobile applications, or leading the architecture of identity management systems, Ali's expertise and leadership have been instrumental in shaping the future of technology.",
-    img: require("../../common/images/Expertise-03.png"),
+    img: "/Expertise-03.png",
   },
   {
     id: 3,
     title: "Biotech visionary and Innovator",
     text: "Innovating a biotech solution with a wearable medical device merged with Machine Learning(ML) and At-edge/On-Chip AI.",
-    img: require("../../common/images/Expertise-04.png"),
+    img: "/Expertise-04.png",
   },
 ];
 
@@ -186,7 +180,7 @@ export const aboutData = {
   academicContributionsLanguagesTitle: "Academic Contributions & Languages",
   academicContributionsLanguagesDescription:
     "In addition to his entrepreneurial endeavors, Ali has made significant contributions to academia, with speaking engagements and contributions to scientific research. Fluent in English, Turkish, and Arabic, Ali's multicultural background enriches his perspective and enables him to collaborate effectively on a global scale. He remains committed to sharing his knowledge and insights with the academic community, mentoring aspiring entrepreneurs, and driving positive change through technology and innovation.",
-  imageURL: require("../../common/images/ali-photo01.png"),
+  imageURL: "/ali-photo01.png",
 };
 
 export const footerData = {
@@ -204,10 +198,38 @@ export const contactData = {
     "Explore Ali Lazim's website to learn more about his professional journey, accomplishments, and ongoing endeavors in driving technological advancements and fostering entrepreneurship on a global scale. Connect with Ali on social media and stay updated on his latest projects, insights, and industry contributions. Join Ali on his mission to harness the power of technology for good and shape a brighter future for generations to come.",
 };
 
+export const booksData = [
+  {
+    title:
+      "The Unlost Words of The Only One God Ever: The Life Story Seeking For The Only One God",
+    description: [
+      `Life has not been easy for me, I've faced wars, death and encountered the most challenging faces of humanity along the way. I was a solitary seeker embarking on a spiritual journey to find the One God I believe in. I've searched for this God everywhere, in history, in the present, and in the future.`,
+      `As I delve deeper into my quest, I realize that my God is not confined to any one religion, culture, or tradition, but rather about connecting with the divine within myself.`,
+      `These unlost words speak of a God who is beyond all religions and cultures. Through my journey looking for these unlost words, I discovered that we are all invited to let go of the narrow definitions and boundaries that we have imposed on the divine and to embrace a more expansive, inclusive understanding of God's infinite nature.`,
+      `Through my life's true story, you will be reminded that you all carry the same source of love, wisdom, and compassion, the One God. We are all encouraged to look beyond our differences and find common ground in our shared humanity.`,
+    ],
+    imageURL: "/Theunlostwords.jpeg",
+    link: "https://www.amazon.com/Unlost-Words-Only-One-Ever-ebook/dp/B0CNJ6Y87V",
+  },
+  {
+    title: "I'AM 101 Booklet Convergence of Identity Pillars",
+    description: [
+      `I’AM is an essential part of cybersecurity that manages everything about digital identities and user access to an organization’s data, systems, and resources covering all IAM, CIAM, IGA, PAM and more.`,
+    ],
+    imageURL: "/Identitybooklet.jpeg",
+    link: "IAM101Booklet.pdf",
+  },
+];
+
 export const socilaMedia = {
   website: "https://alilazim.com",
-  linkedin: "https://linkedin.com/in/ali-lazim-510b156",
   twitter: "https://twitter.com/alilazim",
   github: "https://github.com/alilazim",
   medium: "https://medium.com/@ali.lazim",
+  linkedin: "https://linkedin.com/in/ali-lazim-510b156",
+  googleScholar: "https://scholar.google.com/citations?user=bgGyykEAAAAJ&hl=en",
+  academia: "https://independent.academia.edu/AliLazim",
+  universityOfCalifornia: "https://execed.extension.ucr.edu/ali-lazim.html",
+  universityOfAppliedSciences:
+    "https://biyotam.subu.edu.tr/tr/merkez-danisma-kurulu",
 };

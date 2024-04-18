@@ -72,8 +72,10 @@ export const WhatICanDo = (props: Props) => {
           {whatCanIdoData.map((item, index) => (
             <Image
               key={index}
-              src={whatCanIdoData[index].img}
+              src={item.img}
               alt=""
+              width={1000}
+              height={1000}
               style={{
                 position: "absolute",
                 filter: "grayscale(100%)",

@@ -3,6 +3,7 @@ import {
   FlowingText,
   GetInTouch,
   HomePageAbout,
+  HomePageBooks,
   HomePageVentures,
   QuestionsAnswers,
 } from "@/components";
@@ -15,6 +16,7 @@ export default function Home() {
       <FlowingText />
       <HomePageVentures />
       <WhatICanDo />
+      <HomePageBooks />
       <QuestionsAnswers />
       <GetInTouch />
     </div>

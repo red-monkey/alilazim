@@ -124,9 +124,11 @@ export const VenturesListItem: React.FC<Props> = (props: Props) => {
         }}
       >
         <Image
-          src={require(`../../common/images/${props.coverImage}`)}
+          src={props.coverImage}
           alt=""
           className="w-full h-full grayscale "
+          width={1000}
+          height={1000}
         />
       </div>
     </Link>

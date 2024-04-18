@@ -53,11 +53,13 @@ export const VenturesItem: React.FC<Props> = (props: Props) => {
         }}
         className="w-full"
       >
-        <div className="w-full h-VenturesItem border">
+        <div className="w-full h-auto h-VenturesItem border">
           <Image
-            src={require(`../../common/images/${props.coverImage}`)}
+            src={props.coverImage}
             alt=""
-            className="w-full h-full  object-fill "
+            className="w-full h-full  object-fill"
+            width={1000}
+            height={1000}
             style={grayscaleItem}
           />
         </div>

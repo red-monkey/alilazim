@@ -13,7 +13,7 @@ import { venturesDatas } from "@/common/data/datas";
 
 type Props = {};
 
-const WorkDetails: React.FC<Props> = (props: Props) => {
+const VenturesDetails: React.FC<Props> = (props: Props) => {
   const params = useParams<{ id: string }>();
 
   const venturesData = venturesDatas.find(
@@ -86,7 +86,9 @@ const WorkDetails: React.FC<Props> = (props: Props) => {
         >
           <div className="h-[35rem] sm:w-2/3 w-full mb-10">
             <Image
-              src={require(`../../../common/images/${venturesData?.coverImage}`)}
+              src={venturesData?.coverImage}
+              width={1000}
+              height={1000}
               alt=""
               className="object-fill  w-full h-full  border-4 rounded-lg"
             />
@@ -220,4 +222,4 @@ const WorkDetails: React.FC<Props> = (props: Props) => {
   );
 };
 
-export default WorkDetails;
+export default VenturesDetails;

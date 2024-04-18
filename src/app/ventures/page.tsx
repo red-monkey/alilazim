@@ -5,7 +5,7 @@ import React from "react";
 
 type Props = {};
 
-const Work: React.FC<Props> = (props: Props) => {
+const Ventures: React.FC<Props> = (props: Props) => {
   return (
     <div className="sm:pt-24 pt-12">
       <div className="mt-20 sm:mb-40 mb-20">
@@ -37,4 +37,4 @@ const Work: React.FC<Props> = (props: Props) => {
   );
 };
 
-export default Work;
+export default Ventures;
