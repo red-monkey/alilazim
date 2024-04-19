@@ -12,7 +12,7 @@ import { venturesDatas } from "@/common/data/datas";
 
 type Props = {};
 
-const VenturesDetails: React.FC = ({ params }) => {
+const VenturesDetails: React.FC = ({ params }: any) => {
   console.log(params);
   //const params = useParams<{ id: string }>();
 
