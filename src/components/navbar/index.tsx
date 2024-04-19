@@ -79,7 +79,7 @@ export const Navbar: React.FC = (props: Props) => {
                 className="flex items-center justify-center"
               >
                 <Image
-                  src={"/ucr_black.png"}
+                  src={"./ucr_black.png"}
                   alt="ucr_black"
                   className="h-[2.2rem] w-[2.2rem] rounded-md object-contain"
                   width={40}
@@ -93,7 +93,7 @@ export const Navbar: React.FC = (props: Props) => {
                 className="flex items-center justify-center"
               >
                 <Image
-                  src={"/sakarya_black.png"}
+                  src={"./sakarya_black.png"}
                   alt="ucr_black"
                   className="h-[2.2rem] w-[2.2rem] rounded-md object-contain"
                   width={40}
@@ -107,7 +107,7 @@ export const Navbar: React.FC = (props: Props) => {
                 className="flex items-center justify-center"
               >
                 <Image
-                  src={"/google_black.png"}
+                  src={"./google_black.png"}
                   alt="ucr_black"
                   className="h-[2.2rem] w-[2.2rem] rounded-md object-contain"
                   width={40}
@@ -121,7 +121,7 @@ export const Navbar: React.FC = (props: Props) => {
                 className="flex items-center justify-center"
               >
                 <Image
-                  src={"/acamedia_black.png"}
+                  src={"./acamedia_black.png"}
                   alt="ucr_black"
                   className="h-[2.2rem] w-[2.2rem] rounded-md object-contain"
                   width={40}
@@ -279,7 +279,7 @@ export const Navbar: React.FC = (props: Props) => {
                   className="flex items-center justify-center"
                 >
                   <Image
-                    src={"/ucr_white.png"}
+                    src={"./ucr_white.png"}
                     alt="ucr_black"
                     className="h-[2.2rem] w-[2.2rem] rounded-md object-contain"
                     width={40}
@@ -293,7 +293,7 @@ export const Navbar: React.FC = (props: Props) => {
                   className="flex items-center justify-center"
                 >
                   <Image
-                    src={"/sakarya_white.png"}
+                    src={"./sakarya_white.png"}
                     alt="ucr_black"
                     className="h-[2.2rem] w-[2.2rem] rounded-md object-contain"
                     width={40}
@@ -307,7 +307,7 @@ export const Navbar: React.FC = (props: Props) => {
                   className="flex items-center justify-center"
                 >
                   <Image
-                    src={"/google_white.png"}
+                    src={"./google_white.png"}
                     alt="ucr_black"
                     className="h-[2.2rem] w-[2.2rem] rounded-md object-contain"
                     width={40}
@@ -321,7 +321,7 @@ export const Navbar: React.FC = (props: Props) => {
                   className="flex items-center justify-center"
                 >
                   <Image
-                    src={"/academia_white.png"}
+                    src={"./academia_white.png"}
                     alt="ucr_black"
                     className="h-[2.2rem] w-[2.2rem] rounded-md object-contain"
                     width={40}
