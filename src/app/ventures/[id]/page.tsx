@@ -86,7 +86,7 @@ const VenturesDetails: React.FC<Props> = (props: Props) => {
         >
           <div className="h-[35rem] sm:w-2/3 w-full mb-10">
             <Image
-              src={venturesData?.coverImage}
+              src={venturesData.coverImage}
               width={1000}
               height={1000}
               alt=""
