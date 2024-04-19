@@ -8,13 +8,13 @@ import { useElementOnScreen } from "@/hooks/useElementOnScreen";
 import Image from "next/image";
 import React, { LegacyRef, useState } from "react";
 import { HiChevronLeft, HiChevronRight, HiMiniXMark } from "react-icons/hi2";
-import { useParams } from "next/navigation";
 import { venturesDatas } from "@/common/data/datas";
 
 type Props = {};
 
-const VenturesDetails: React.FC<Props> = (props: Props) => {
-  const params = useParams<{ id: string }>();
+const VenturesDetails: React.FC = ({ params }) => {
+  console.log(params);
+  //const params = useParams<{ id: string }>();
 
   const venturesData = venturesDatas.find(
     (venturesData) => venturesData.id === params.id
