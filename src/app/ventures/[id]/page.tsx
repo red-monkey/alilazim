@@ -85,13 +85,17 @@ const VenturesDetails: React.FC<Props> = (props: Props) => {
           className="w-full items-center justify-center flex flex-col sm:mb-40 mb-20"
         >
           <div className="h-[35rem] sm:w-2/3 w-full mb-10">
-            <Image
-              src={venturesData.coverImage}
-              width={1000}
-              height={1000}
-              alt=""
-              className="object-fill  w-full h-full  border-4 rounded-lg"
-            />
+            {venturesData ? (
+              <Image
+                src={venturesData.coverImage}
+                width={1000}
+                height={1000}
+                alt=""
+                className="object-fill  w-full h-full  border-4 rounded-lg"
+              />
+            ) : (
+              <></>
+            )}
           </div>
           <div className="flex flex-row sm:w-2/3 w-full items-center justify-around">
             <div className="flex flex-col w-1/2 items-center">
