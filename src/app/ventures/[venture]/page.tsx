@@ -1,4 +1,4 @@
-//"use client";
+"use client";
 import {
   VenturesDetailsImgItem,
   GetInTouch,
@@ -9,21 +9,21 @@ import { useElementOnScreen } from "@/hooks/useElementOnScreen";
 import Image from "next/image";
 import React, { LegacyRef, useState } from "react";
 import { HiChevronLeft, HiChevronRight, HiMiniXMark } from "react-icons/hi2";
-//import { useParams } from "next/navigation";
+import { useParams } from "next/navigation";
 import { venturesDatas } from "@/common/data/datas";
 
 type Props = {};
 
-export function generateStaticParams() {
+/* export function generateStaticParams() {
   let venturesReturn: object[] = [];
   venturesDatas.map((ventures, index) =>
     venturesReturn.push({ venture: ventures.id })
   );
   return venturesReturn;
-}
+} */
 
-const VenturesDetails = async ({ params }: { params: { venture: string } }) => {
-  //  const params = useParams<{ id: string }>();
+const VenturesDetails = (/* { params }: { params: { venture: string } } */) => {
+  const params = useParams<{ venture: string }>();
 
   const venturesData = venturesDatas.find(
     (venturesData) => venturesData.id === params.venture
