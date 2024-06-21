@@ -184,11 +184,11 @@ export const aboutData = {
 };
 
 export const footerData = {
-  title: "Ali Lazım",
+  title: "Ali Lazim",
 };
 
 export const navbarData = {
-  title: "Ali Lazım",
+  title: "Ali Lazim",
 };
 
 export const contactData = {
